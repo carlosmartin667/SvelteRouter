@@ -3,6 +3,7 @@
   import Contacto from "./views/contacto.svelte";
   import Detalle from "./views/detalle.svelte";
   import Home from "./views/home.svelte";
+import Login from "./views/login.svelte";
 </script>
 
 <div>
@@ -32,6 +33,11 @@
               ><Link to="/Contacto">Contacto</Link></a
             >
           </li>
+		  <li class="nav-item">
+            <a class="nav-item nav-link" href="#"
+              ><Link to="/Login">Login</Link></a
+            >
+          </li>
         </ul>
       </div>
     </nav>
@@ -45,6 +51,9 @@
       </Route>
       <Route path="/Contacto">
         <Contacto />
+      </Route>
+	  <Route path="/Login">
+        <Login />
       </Route>
     </div></Router
   >
