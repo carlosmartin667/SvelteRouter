@@ -6,30 +6,46 @@
 </script>
 
 <div>
-	<h1>App</h1>
-	<Router>
-		<nav>
-			<Link to="/">Home</Link>
-			<Link to="/Detalle">Detalle</Link>
-			<Link to="/Contacto">Contacto</Link>
-		</nav>
-
-		<Route path="/">
-			<Home></Home>
-		</Route>
-		<Route path="/Detalle">
-			<Detalle></Detalle>
-		</Route>
-		<Route path="/Contacto">
-			<Contacto></Contacto>
-		</Route>
-	</Router>
+  <Router>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <Link to="/">Home</Link>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" />
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#"
+              ><Link to="/Detalle">Detalle</Link></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="#"
+              ><Link to="/Contacto">Contacto</Link></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container ">
+      <br />
+      <Route path="/">
+        <Home />
+      </Route>
+      <Route path="/Detalle">
+        <Detalle />
+      </Route>
+      <Route path="/Contacto">
+        <Contacto />
+      </Route>
+    </div></Router
+  >
 </div>
-<style>
-  h1 {
-    color: #00fff2;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
-  }
-</style>

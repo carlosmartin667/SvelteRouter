@@ -1,4 +1,4 @@
 <script>
-
 </script>
-<h1>detalles</h1>
+
+<div class="alert alert-primary" role="alert">detalle</div>

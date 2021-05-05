@@ -1,4 +1,4 @@
 <script>
-
 </script>
-<h1>hola  esto es contacto </h1>
+
+<div class="alert alert-danger" role="alert">contacto</div>

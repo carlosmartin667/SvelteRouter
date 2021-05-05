@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
-<h1>inicio</h1>
+<div class="alert alert-success" role="alert">Inicio</div>
